@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+</head>
+<body>
+    <h1>USER LOGIN PAGE OF OLA APP</h1>
+    {%if email == 'raja@gmail.com'%}
+        {%if pass == '12345'%}
+            <h2>current date {{dt}}</h2>
+            <h2>student information</h2>
+            <h3>student name is {{sname}}</h3>
+            <h3>student roll is {{sroll}}</h3>
+            <h3>student address is {{saddress}}</h3>
+            <h3>student branch is {{sbranch}}</h3>
+        {%else%}
+            <h1>invalid password</h1>
+        {%endif%}
+    {%else%}
+        <h1>invalid password</h1>
+    {%endif%}
+</body>
+</html>
